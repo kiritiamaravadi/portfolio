@@ -1,0 +1,193 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f1f; /* Navy blue background */
+  overflow-x: hidden; /* Prevent scrolling */
+  overflow-y: auto ;
+  font-family: "Mona Sans", MonaSansFallback, -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Particles Background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure particles are behind everything */
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 15, 31, 0.9); /* Semi-transparent navy */
+  padding: 1rem 2rem;
+  z-index: 10; /* Above particles */
+  display: flex;
+  justify-content: space-between; /* Space between links and icons */
+  align-items: center; /* Vertically center content */
+  box-shadow: transparent;
+}
+
+.navbar {
+  background: transparent; /* Remove background color */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: "Mona Sans", MonaSansFallback, -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  
+}
+
+.nav-links a {
+  color: #fff; /* Ensure links are visible on the background */
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: "Mona Sans", MonaSansFallback, -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  
+}
+
+.nav-links a:hover {
+  color: #ffffff; /* Add hover effect */
+  transform: scale(1.8); /* Scale effect on hover */
+}
+
+/* Social Icons in Header */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Main Section */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 0.5rem;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 5; /* Ensure it's above particles */
+  font-family: "Mona Sans", MonaSansFallback, -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.main-section h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: "Mona Sans", MonaSansFallback, -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.main-section p{
+  color: #ffffff;
+  font-size: 1.2rem;
+  size: 18px;
+  font-weight: 450;
+  line-height: 27px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Mona Sans", MonaSansFallback, -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji";
+}
+
+/* Email Notify Section */
+.email-notify .input-container {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #f6f8fa, #e9ebee); /* Subtle gradient for a polished effect */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Light border like GitHub’s */
+  border-radius: 10px; /* Smoother, more modern rounded corners */
+  overflow: hidden; 
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow for elevation */
+  font-family: "Mona Sans", MonaSansFallback, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.email-notify label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #57606a;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.email-notify input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #24292f;
+  font-weight: 450;
+  font-family: inherit;
+}
+
+.email-notify input::placeholder {
+  color: #57606a; /* More accurate GitHub placeholder tone */
+}
+
+.email-notify button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #22863a;
+  border: none; /* Explicitly set to none */
+  border-radius: 8px 8px 8px 8px; /* Adjusted for a smoother corner */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: calc(100% - 8px); /* Reduce height to create a gap at the top */
+  margin: 2px 2px 2px 0; /* Add gap at the top and right */
+  box-sizing: border-box; /* Ensure padding and border are included in the height */
+}
+
+.email-notify button:hover {
+  background-color: #1a6a2f;
+}
+
+
+
+

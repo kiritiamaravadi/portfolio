@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Particles with Centered Text</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://kit.fontawesome.com/6abe269f7f.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/kiritiamaravadi" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/kiritiamaravadi" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://instagram.com/_thekiritisharma" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/kiritiamaravadi" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Particles Container -->
+  <div id="particles-js"></div>
+
+  <!-- Main Section -->
+  <main class="main-section" id="home">
+    <h1>Hi, I'm Kiriti<br>I'm a Software Engineer</h1>
+    <p>Building quiet magic in the background</p>
+    <div class="email-notify">
+      <div class="input-container">
+        <input type="email" placeholder="you@domain.com" required />
+        <button type="button">Notify me</button>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Initialize Particles -->
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 100, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+        },
+        opacity: { value: 0.5, random: false },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 4, direction: "none", random: false, straight: false, out_mode: "out", bounce: false },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+        },
+        modes: {
+          repulse: { distance: 150, duration: 0.4 },
+          push: { particles_nb: 5 },
+        },
+      },
+      retina_detect: true,
+    });
+  </script>
+</body>
+</html>
+
