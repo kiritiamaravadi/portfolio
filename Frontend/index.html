@@ -42,14 +42,14 @@
     <h1>Hi, I'm Kiriti<br>I'm a Software Engineer</h1>
     <p>Building quiet magic in the background</p>
     <div class="email-notify">
-      <div class="input-container">
-        <input type="email" placeholder="you@domain.com" required />
-        <button type="button">Notify me</button>
-      </div>
+      <form id="emailForm">
+        <div class="input-container">
+          <input type="email" id="emailInput" placeholder="Enter your email" required />
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </div>
   </main>
-
-
 
   <!-- Initialize Particles -->
   <script>
@@ -79,6 +79,26 @@
         },
       },
       retina_detect: true,
+    });
+
+    // Add email form submission logic
+    document.getElementById("emailForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const email = document.getElementById("emailInput").value;
+
+      try {
+        const response = await fetch("http://127.0.0.1:8000/submit-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email }),
+        });
+
+        const result = await response.json();
+        alert(result.message);
+      } catch (error) {
+        alert("An error occurred. Please try again later.");
+        console.error(error);
+      }
     });
   </script>
 </body>
