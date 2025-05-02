@@ -15,11 +15,12 @@ html {
 /* Particles Background */
 #particles-js {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensure particles are behind everything */
+  top: 0;
+  left: 0;
+  z-index: 0; /* Updated z-index */
+  pointer-events: auto; /* Ensure particles are interactive */
 }
 
 /* Navigation Bar */
@@ -92,24 +93,25 @@ html {
 
 /* Main Section */
 .main-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  margin-bottom: 0.5rem;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 1rem 1rem; /* Adjusted padding */
+  margin: 1rem auto; /* Adjusted margin */
+  margin-top: 15rem;
   text-align: center;
   color: #ffffff;
-  z-index: 5; /* Ensure it's above particles */
+  z-index: 5;
+  max-width: 800px; /* Added max-width */
+  min-height: auto; /* Remove the 100vh height */
   font-family: "Mona Sans", MonaSansFallback, -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 .main-section h1 {
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -125,6 +127,213 @@ html {
   margin-bottom: 2rem;
   text-align: center;
   font-family: "Mona Sans", MonaSansFallback, -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji";
+}
+
+#about.main-section{
+  margin-top: 25rem;
+}
+
+/* Experience Section Styles */
+#experience.main-section {
+  position: relative;
+  margin-top: 25rem;
+  max-width: 850px;
+  padding: 0 2rem;
+}
+
+.experience-box {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  z-index: 1;
+  text-align: left;
+}
+
+/* Update hover effects */
+.experience-box:hover {
+  transform: scale(1.25);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.experience-box:hover ~ .experience-box {
+  filter: blur(5px);
+  transform: scale(0.95);
+  opacity: 0.7;
+}
+
+.experience-item {
+  display: block; /* Change from flex to block */
+  text-align: left;
+  width: 100%;
+}
+
+.experience-item h3 {
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+/* Update header line styles */
+.header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.org-name {
+  display: inline-block;
+  color: #ffffff;
+  text-align: left;
+}
+
+.date {
+  color: #ffffff;  /* Slightly transparent white */
+  display: inline-block;
+  text-align: right;
+  white-space: nowrap;  /* Prevents date from wrapping */
+}
+
+
+/* Update your role styles */
+.role {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-item li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.experience-item li i {
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  font-size: 0.7rem;
+  color: #ffffff;  /* GitHub blue color */
+  transition: transform 0.2s ease;
+}
+
+.experience-item li:hover i {
+  transform: translateX(2px);  /* Slight movement on hover */
+  color: #ffffff;  /* Lighter blue on hover */
+}
+
+/* Add company logo/icon space */
+.company-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Tags for technologies */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  background: rgba(46, 160, 67, 0.15);
+  color: #2ea043;
+}
+
+/* Timeline line */
+#experience.main-section::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #experience.main-section::before {
+    left: 31px;
+  }
+
+  .experience-box {
+    width: calc(100% - 80px);
+    margin-left: 80px !important;
+  }
+
+  .experience-box::before {
+    left: -44px !important;
+  }
+}
+
+/* Ensure content boxes maintain their style */
+.content-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: inline-block; /* Changed to inline-block */
+  width: auto; /* Changed to auto */
+  min-width: 300px; /* Add minimum width */
+}
+
+.content-box p {
+  line-height: 2; /* Increase from default to 2 */
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em; /* Subtle letter spacing */
+}
+
+/* Optional: Add specific styles for the About section's content box */
+#about .content-box p {
+  line-height: 1.75; /* Even more spacing specifically for About section */
+  padding: 0.5rem 0; /* Add vertical padding */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .experience-box {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  
+  .experience-box:nth-child(odd),
+  .experience-box:nth-child(even) {
+    margin: 0 0 2rem 0;
+  }
 }
 
 /* Email Notify Section */
