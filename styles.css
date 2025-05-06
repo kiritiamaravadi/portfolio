@@ -428,6 +428,82 @@ html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Mobile-friendly styles */
+@media screen and (max-width: 768px) {
+  /* Adjust main sections */
+  .main-section {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  /* Adjust headings */
+  .main-section h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Experience/Project boxes */
+  .content-box {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  /* Header line in experience/project boxes */
+  .header-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+
+  /* Tech tags */
+  .tech-tags {
+    gap: 0.5rem;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  /* Project links */
+  .project-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-links a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Navigation */
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .social-icons {
+    gap: 0.75rem;
+  }
+
+  /* Email form */
+  .input-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .input-container input,
+  .input-container button {
+    width: 100%;
+  }
+}
+
 
 
 

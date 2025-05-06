@@ -326,7 +326,13 @@
   <script>
     particlesJS("particles-js", {
       particles: {
-        number: { value: 100, density: { enable: true, value_area: 800 } },
+        number: { 
+          value: 50,  // Reduce number of particles on mobile
+          density: { 
+            enable: true, 
+            value_area: 800 
+          } 
+        },
         color: { value: "#ffffff" },
         shape: {
           type: "circle",
