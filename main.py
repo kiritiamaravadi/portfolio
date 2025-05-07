@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 # Define the correct path to store emails.json in the Portfolio/ folder
-EMAILS_FILE = Path(__file__).resolve().parent.parent / "emails.json"
+EMAILS_FILE = Path(__file__).resolve().parent / "emails.json"
 
 @app.post("/submit-email")
 async def submit_email(request: Request):
