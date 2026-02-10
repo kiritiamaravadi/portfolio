@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kiriti Portfolio</title>
+  <meta name="description"
+    content="Kiriti Amaravadi — Software Engineer. Building secure, scalable microservices with Java, Spring Boot, and cloud technologies." />
+  <meta name="author" content="Kiriti Amaravadi" />
+  <meta property="og:title" content="Kiriti Amaravadi — Software Engineer" />
+  <meta property="og:description"
+    content="Software Engineer building secure, scalable microservices across healthcare, civic-tech, and finance domains." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kiritiamaravadi.github.io/portfolio/" />
+  <title>Kiriti Amaravadi — Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://kit.fontawesome.com/6abe269f7f.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+  <script src="https://kit.fontawesome.com/6abe269f7f.js" crossorigin="anonymous" defer></script>
 </head>
+
 <body>
+
   <!-- Navigation Bar -->
   <header class="navbar">
     <nav class="nav-links">
       <a href="#home" aria-label="Home">
         <i class="fa-solid fa-house"></i>
       </a>
-      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <!-- <a href="#contact">Contact</a> -->
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="social-icons">
-      <a href="https://linkedin.com/in/kiritiamaravadi" target="_blank" aria-label="LinkedIn">
+      <a href="https://linkedin.com/in/kiritiamaravadi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <i class="fab fa-linkedin-in"></i>
       </a>
-      <a href="https://github.com/kiritiamaravadi" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/kiritiamaravadi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://instagram.com/_thekiritisharma" target="_blank" aria-label="Instagram">
+      <a href="https://instagram.com/_thekiritisharma" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://twitter.com/kiritiamaravadi" target="_blank" aria-label="Twitter">
+      <a href="https://twitter.com/kiritiamaravadi" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
         <i class="fab fa-twitter"></i>
       </a>
     </div>
@@ -39,345 +50,351 @@
   <!-- Particles Container -->
   <div id="particles-js"></div>
 
-  <!-- Main Section -->
-  <main class="main-section" id="home">
-    <h1>Hi, I'm Kiriti<br>I'm a Software Engineer</h1>
-    <p>Building quiet magic in the background</p>
+  <!-- Hero Section -->
+  <section class="section hero" id="home">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Open to opportunities
+    </div>
+    <h1>Kiriti Amaravadi</h1>
+    <p class="hero-subtitle">
+      Software Engineer building secure, scalable microservices with Java, Spring Boot, and cloud technologies — across
+      healthcare, civic-tech, and finance domains.
+    </p>
+    <div class="hero-links">
+      <a href="mailto:kiritisharma2104@gmail.com" class="btn-primary">
+        <i class="fas fa-envelope"></i> Get in Touch
+      </a>
+      <a href="https://github.com/kiritiamaravadi" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/in/kiritiamaravadi" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+    </div>
     <div class="email-notify">
       <form id="emailForm">
         <div class="input-container">
-          <input type="email" id="emailInput" placeholder="Enter your email" required />
-          <button type="submit">Submit</button>
+          <input type="email" id="emailInput" placeholder="Enter your email to stay updated" required />
+          <button type="submit">Subscribe</button>
         </div>
       </form>
     </div>
-  </main>
+  </section>
 
-  <!-- About Section -->
-  <section class="main-section" id="about">
-    <h1>My Personality in a Nutshell</h1>
-    <p>I'm 6'2", and I code exceptional software.</p>
-    <div class="content-box">
-      <p>I’m a humble, spiritual, and confident guy who loves building things that matter. 
-        Whether it’s writing clean code, cooking a great meal, or playing cricket, I give my best to everything I do.
-        Growth matters more to me than trends. If I commit to something, I see it through—with discipline, heart, and intent. I may keep a small circle, but I’m friendly, honest, and reliable.
-        Coding isn’t just a skill—it’s a craft I’ve shaped across frontend and backend, always learning and building with purpose. This space reflects that mindset: simple, focused, and full of intent.</p>
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="section-header reveal">
+      <h2><i class="fas fa-code"></i> Technical Skills</h2>
+      <p>Technologies and tools I work with</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3><i class="fas fa-laptop-code"></i> Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Kotlin</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><i class="fas fa-server"></i> Back-End</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">REST</span>
+          <span class="skill-tag">JDBC</span>
+          <span class="skill-tag">Liquibase</span>
+          <span class="skill-tag">Hibernate</span>
+          <span class="skill-tag">GraphQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><i class="fas fa-palette"></i> Front-End</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Angular</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><i class="fas fa-database"></i> Databases</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Redis</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><i class="fas fa-stream"></i> Messaging</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Kafka</span>
+          <span class="skill-tag">RabbitMQ</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><i class="fas fa-vial"></i> Testing</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">JUnit</span>
+          <span class="skill-tag">Karate</span>
+          <span class="skill-tag">Selenium</span>
+          <span class="skill-tag">Playwright</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS EC2</span>
+          <span class="skill-tag">S3</span>
+          <span class="skill-tag">Lambda</span>
+          <span class="skill-tag">DynamoDB</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><i class="fas fa-tools"></i> Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">IntelliJ</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Maven</span>
+          <span class="skill-tag">Gradle</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Experience Section -->
-  <section class="main-section" id="experience">
-    <h1>My Experience</h1>
-    <p>Not just roles—these are chapters of growth, grit, and good code.</p>
-    
-    <!-- Experience 1 -->
-    <div class="content-box experience-box">
-      <div class="experience-item">
-        <h3>
-          <div class="org-name">U Control Billing</div>
-          <!-- <div class="date">Nov 2024 - Mar 2025</div> -->
-          <br>
-          <div class="role">Software Engineer</div>
-        </h3>
-        <ul>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Built a Python pipeline to transfer large healthcare data into PostgreSQL and SQL Server daily, 
-            reducing load time from 4 hours to 50 minutes.
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Developed Django and Java-based APIs to serve revenue forecasts, 
-            improving model accuracy by 15% and handling high traffic efficiently.
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Created live dashboards and alerting systems, helping teams 
-            monitor forecasts in real time and cutting downtime from 45 to 12 minutes.
-          </li>
-        </ul>
-        <div class="tech-tags">
-          <div class="tech-tag">Python</div>
-          <div class="tech-tag">Django</div>
-          <div class="tech-tag">TensorFlow</div>
-          <div class="tech-tag">PostgreSQL</div>
-          <div class="tech-tag">Docker</div>
-          <div class="tech-tag">AWS</div>
-        </div>
-      </div>
+  <section class="section" id="experience">
+    <div class="section-header reveal">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <p>Where I've worked and what I've built</p>
     </div>
+    <div class="experience-timeline">
 
-    <!-- Experience 2 -->
-    <div class="content-box experience-box">
-      <div class="experience-item">
-        <h3>
-          <div class="org-name">Democracy Lab</div>
-          <!-- <div class="date">April 2025 - present</div> -->
-          <br>
-          <div class="role">Software Engineer</div>
-        </h3>
+      <!-- Goldman Sachs -->
+      <div class="experience-card reveal">
+        <div class="experience-header">
+          <span class="org-name">Goldman Sachs</span>
+          <span class="date">Sep 2025 – Present</span>
+          <span class="role">Software Engineer</span>
+        </div>
         <ul>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Transformed a legacy monolith into efficient Django and FastAPI microservices, slashing API response times by 40%, streamlining CI/CD with GitHub Actions and ECS, and enabling rapid, safe deployments.
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Automated 25 GB of nightly civic-tech data ingestion with AWS Glue and built a real-time feature store for sub-100ms lookups; improved ML model accuracy from 67% to 80% through robust retraining workflows in SageMaker.
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Enabled non-technical content publishing via a headless CMS, cutting dev tickets by 45%, and delivered live React dashboards with metrics that grew contributor activity by 30%; deployed CloudWatch + Grafana observability stack to reduce error detection time by 67%.
-          </li>
+          <li>Developed and maintained Java-based Spring Boot applications using layered architecture (Controller,
+            Service, Repository, Entity, Mapper), with clean code practices, proper documentation (JavaDocs), and API
+            design principles.</li>
+          <li>Worked with IntelliJ IDEA for end-to-end development including Git operations, code
+            refactoring/reformatting, unit test creation, and improving test coverage.</li>
+          <li>Implemented and validated RESTful APIs using Postman, handling request/response payloads, headers,
+            authentication & authorization, and HTTP status codes to ensure reliable API behavior.</li>
+          <li>Collaborated through GitLab for version control and CI workflows, managing repositories, branches,
+            commits, merge requests, code reviews, and monitoring pipelines with quality and build badges.</li>
+          <li>Used AWS logging tools for application monitoring and debugging; performed SQL operations in cloud-based
+            workspaces and strengthened problem-solving skills through foundational DSA practice.</li>
         </ul>
         <div class="tech-tags">
-          <div class="tech-tag">Python</div>
-          <div class="tech-tag">PyTorch</div>
-          <div class="tech-tag">FastAPI</div>
-          <div class="tech-tag">GitHub</div>
-          <div class="tech-tag">React.js</div>
-          <div class="tech-tag">PostgreSQL</div>
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">REST APIs</span>
+          <span class="tech-tag">GitLab</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">Postman</span>
+          <span class="tech-tag">IntelliJ IDEA</span>
         </div>
       </div>
+
+      <!-- Lotus IT Services -->
+      <div class="experience-card reveal">
+        <div class="experience-header">
+          <span class="org-name">Lotus IT Services</span>
+          <span class="date">Apr 2025 – Aug 2025</span>
+          <span class="role">Software Engineer</span>
+        </div>
+        <ul>
+          <li>Developed and maintained scalable web applications and backend systems using Python, Django, and
+            JavaScript to support ongoing product development initiatives.</li>
+          <li>Designed, implemented, and optimized data pipelines and machine learning models for real-time analytics,
+            utilizing TensorFlow, Keras, Pandas, and AWS services.</li>
+          <li>Collaborated with cross-functional teams to gather requirements, define technical specifications, and
+            contribute to full-stack development projects in an Agile environment.</li>
+          <li>Built and maintained dashboards, APIs, and system automation tools using RESTful services, Docker, GitHub
+            Actions, and cloud platforms like AWS to streamline operations.</li>
+          <li>Conducted thorough testing, debugging, and documentation of code to ensure high reliability, security, and
+            maintainability in production environments.</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">TensorFlow</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">GitHub Actions</span>
+        </div>
+      </div>
+
+      <!-- U Control Billing -->
+      <div class="experience-card reveal">
+        <div class="experience-header">
+          <span class="org-name">U Control Billing</span>
+          <span class="date">Nov 2024 – Mar 2025</span>
+          <span class="role">Software Engineer</span>
+        </div>
+        <ul>
+          <li>Designed and developed backend services using Java, Spring Boot, and PostgreSQL to support a healthcare
+            data processing platform, enabling automated ingestion and transformation of large volumes of hospital
+            billing records.</li>
+          <li>Built secure REST APIs to serve processed billing and claims data to internal tools and external
+            dashboards, ensuring reliable data access across reporting, audit tracking, and financial reconciliation
+            modules.</li>
+          <li>Implemented Kafka-based messaging workflows between backend services such as billing validation, charge
+            categorization, and audit logging modules, allowing asynchronous processing of hospital billing records.
+          </li>
+          <li>Deployed Spring Boot applications using Docker containers on AWS EC2, configuring services to support core
+            billing functions like charge validation, payment status tracking, and access control.</li>
+          <li>Developed interactive dashboards using React.js, connected to backend APIs powered by Java and PostgreSQL,
+            to display billing summaries, payment statuses, and claim timelines.</li>
+          <li>Wrote comprehensive unit and integration tests using JUnit and Mockito to ensure correctness of billing
+            logic, API responses, and database operations.</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Kafka</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">AWS EC2</span>
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">JUnit</span>
+        </div>
+      </div>
+
+      <!-- Democracy Lab -->
+      <div class="experience-card reveal">
+        <div class="experience-header">
+          <span class="org-name">Democracy Lab</span>
+          <span class="date">Jul 2024 – Feb 2025</span>
+          <span class="role">Software Engineer</span>
+        </div>
+        <ul>
+          <li>Extended a Spring Boot-based backend for a SaaS ticketing platform by adding features like auto ticket
+            assignment and SLA-based escalation, improving ticket routing and escalation handling.</li>
+          <li>Built REST APIs using Spring MVC for ticket creation, status updates, and invoice retrieval, ensuring
+            clean request handling and seamless integration with the frontend and external systems.</li>
+          <li>Integrated Apache Kafka to enable asynchronous updates between ticketing, notification, and audit modules,
+            supporting real-time status changes and event-driven workflows.</li>
+          <li>Containerized backend services using Docker and deployed them on AWS EC2, setting up automated pipelines
+            with Jenkins to run tests, build artifacts, and push updates.</li>
+          <li>Used Spring Security and OAuth 2.0 to add login protection and role-based access, making sure admins,
+            agents, and clients could only access the parts of the platform meant for them.</li>
+          <li>Created test flows using Karate to simulate real-world ticket handling and invoicing scenarios, verifying
+            how different services and APIs worked together across the full system.</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">Spring Security</span>
+          <span class="tech-tag">Kafka</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">AWS EC2</span>
+          <span class="tech-tag">Jenkins</span>
+          <span class="tech-tag">OAuth 2.0</span>
+          <span class="tech-tag">Karate</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+      </div>
+
     </div>
-
-    
-    <!-- Experience 3 -->
-    <div class="content-box experience-box">
-      <div class="experience-item">
-        <h3>
-          <div class="org-name">UNC Charlotte</div>
-          <!-- <div class="date">April 2025 - present</div> -->
-          <br>
-          <div class="role">Graduate Assistant</div>
-        </h3>
-        <ul>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Developed a machine learning model using Wi-Fi signals to recognize indoor movements while preserving user privacy, improving classification performance significantly.
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Built efficient Python tools to clean and analyze large wireless datasets, and organized real-world experiments to collect high-quality motion data for training and evaluation.
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Assisted in teaching computer science courses, guided students through lab assignments, and provided hands-on help with topics like machine learning, data processing, and research methodology.
-          </li>
-        </ul>
-        <div class="tech-tags">
-          <div class="tech-tag">Python</div>
-          <div class="tech-tag">PyTorch</div>
-          <div class="tech-tag">Git</div>
-          <div class="tech-tag">GitHub</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Experience 4 -->
-    <div class="content-box experience-box">
-      <div class="experience-item">
-        <h3>
-          <div class="org-name">UNC Charlotte</div>
-          <!-- <div class="date">April 2025 - present</div> -->
-          <br>
-          <div class="role">IT Support Specialist</div>
-        </h3>
-        <ul>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Handled over 500 support tickets for Windows and macOS systems, consistently meeting response SLAs and solving most issues on first contact.
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Maintained 500+ university devices by automating software updates and security patches using tools like SCCM and Jamf Pro, reducing manual effort and ensuring up-to-date systems.
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Created Python scripts to automate routine tasks like log collection and system checks, speeding up troubleshooting and helping the team work more efficiently.
-          </li>
-        </ul>
-        <div class="tech-tags">
-          <div class="tech-tag">Acitve Directory</div>
-          <div class="tech-tag">Microsoft SCCM</div>
-          <div class="tech-tag">Cherwell</div>
-          <div class="tech-tag">Windows OS</div>
-          <div class="tech-tag">MacOS</div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Experience 5
-    <div class="content-box experience-box">
-      <div class="experience-item">
-        <h3>
-          <div class="header-line">
-            <div class="org-name">UNC Charlotte</div>
-            <div class="date">April 2025 - present</div>
-          </div>
-          <br>
-          <div class="role">IT Support Specialist</div>
-        </h3>
-        <ul>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Led development of scalable backend systems using Python and FastAPI
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Improved system performance by 40% through optimization
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Mentored junior developers and conducted code reviews
-          </li>
-        </ul>
-        <div class="tech-tags">
-          <div class="tech-tag">Python</div>
-          <div class="tech-tag">FastAPI</div>
-          <div class="tech-tag">PostgreSQL</div>
-        </div>
-      </div>
-    </div> -->
-
-
   </section>
 
-  <!-- Projects Section -->
-  <section class="main-section" id="projects">
-    <h1>Featured Projects</h1>
-    <p>From concept to deployment—here's what I've built.</p>
-
-    <!-- Project 1 -->
-    <div class="content-box experience-box">
-      <div class="experience-item">
-        <h3>
-          <div class="header-line">
-            <div class="org-name">Portfolio Website</div>
-            <div class="date">2025</div>
-          </div>
-        </h3>
-        <ul>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Built a responsive portfolio using HTML, CSS, and JavaScript with particle.js for interactive background effects
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Implemented smooth scrolling, dynamic content loading, and mobile-first design principles
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Integrated FastAPI backend for email collection and contact form functionality
-          </li>
-        </ul>
-        <div class="tech-tags">
-          <div class="tech-tag">HTML5</div>
-          <div class="tech-tag">CSS3</div>
-          <div class="tech-tag">JavaScript</div>
-          <div class="tech-tag">FastAPI</div>
-          <div class="tech-tag">Particle.js</div>
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="section-header reveal">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <p>Where I studied and what I learned</p>
+    </div>
+    <div class="education-grid">
+      <div class="education-card reveal">
+        <div class="degree">Master of Science in Computer Science</div>
+        <div class="school">University of North Carolina at Charlotte</div>
+        <div class="edu-meta">
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Charlotte, NC</span>
+          <span class="edu-date">Jan 2023 – May 2024</span>
         </div>
-        <div class="project-links">
-          <a href="https://kiritiamaravadi.github.io/portfolio/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          <!-- <a href="[github-url]" target="_blank"><i class="fab fa-github"></i> Source Code</a> -->
+        <div class="coursework-label">Related Coursework</div>
+        <div class="coursework-tags">
+          <span class="coursework-tag">Artificial Intelligence</span>
+          <span class="coursework-tag">Visual Analytics</span>
+          <span class="coursework-tag">Software Systems</span>
+          <span class="coursework-tag">Computer Networks</span>
+          <span class="coursework-tag">Database Systems</span>
+          <span class="coursework-tag">Algorithms</span>
+          <span class="coursework-tag">Machine Learning</span>
+        </div>
+      </div>
+      <div class="education-card reveal">
+        <div class="degree">B.Tech in Computer Science & Engineering</div>
+        <div class="school">Guru Nanak Institutions</div>
+        <div class="edu-meta">
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+          <span class="edu-date">Aug 2018 – Aug 2022</span>
+        </div>
+        <div class="coursework-label">Related Coursework</div>
+        <div class="coursework-tags">
+          <span class="coursework-tag">OOP</span>
+          <span class="coursework-tag">Artificial Intelligence</span>
+          <span class="coursework-tag">Software Engineering</span>
+          <span class="coursework-tag">Operating Systems</span>
+          <span class="coursework-tag">Data Science</span>
+          <span class="coursework-tag">Web Development</span>
+          <span class="coursework-tag">Distributed Systems</span>
+          <span class="coursework-tag">Cloud Computing</span>
         </div>
       </div>
     </div>
-
-    <!-- Project 2 -->
-    <!-- <div class="content-box experience-box">
-      <div class="experience-item">
-        <h3>
-          <div class="header-line">
-            <div class="org-name">AI-Powered Task Manager</div>
-            <div class="date">2023</div>
-          </div>
-        </h3>
-        <ul>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Developed a smart task management system with ML-based priority sorting and deadline predictions
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Implemented real-time collaboration features and automated task categorization
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            Integrated with Google Calendar API for seamless schedule synchronization
-          </li>
-        </ul>
-        <div class="tech-tags">
-          <div class="tech-tag">Python</div>
-          <div class="tech-tag">React</div>
-          <div class="tech-tag">MongoDB</div>
-          <div class="tech-tag">scikit-learn</div>
-          <div class="tech-tag">Docker</div>
-        </div>
-        <div class="project-links">
-          <a href="[demo-url]" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-           <a href="[github-url]" target="_blank"><i class="fab fa-github"></i> Source Code</a>
-        </div>
-      </div>
-    </div> -->
   </section>
 
-  <!-- Initialize Particles -->
-  <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { 
-          value: 100,  // Reduce number of particles on mobile
-          density: { 
-            enable: true, 
-            value_area: 800 
-          } 
-        },
-        color: { value: "#ffffff" },
-        shape: {
-          type: "circle",
-          stroke: { width: 0, color: "#000000" },
-          polygon: { nb_sides: 5 },
-        },
-        opacity: { value: 0.5, random: false },
-        size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 4, direction: "none", random: false, straight: false, out_mode: "out", bounce: false },
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" },
-        },
-        modes: {
-          repulse: { distance: 150, duration: 0.4 },
-          push: { particles_nb: 5 },
-        },
-      },
-      retina_detect: true,
-    });
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-header reveal">
+      <h2><i class="fas fa-paper-plane"></i> Get in Touch</h2>
+      <p>I'm always open to discussing new opportunities</p>
+    </div>
+    <div class="contact-box reveal">
+      <p>Feel free to reach out if you want to collaborate, have a question, or just want to connect.</p>
+      <div class="contact-links">
+        <a href="mailto:kiritisharma2104@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i> kiritisharma2104@gmail.com
+        </a>
+        <a href="tel:+19803075647" class="contact-link">
+          <i class="fas fa-phone"></i> (980) 307-5647
+        </a>
+        <a href="https://linkedin.com/in/kiritiamaravadi" target="_blank" rel="noopener noreferrer"
+          class="contact-link">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="https://github.com/kiritiamaravadi" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </section>
 
-    // Add email form submission logic
-    document.getElementById("emailForm").addEventListener("submit", async function(e) {
-      e.preventDefault();
-      const email = document.getElementById("emailInput").value;
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Built with intent by <a href="https://github.com/kiritiamaravadi" target="_blank"
+        rel="noopener noreferrer">Kiriti Amaravadi</a> &copy; 2025</p>
+  </footer>
 
-      try {
-        const response = await fetch("http://127.0.0.1:8000/submit-email", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email }),
-        });
-
-        const result = await response.json();
-        alert(result.message);
-      } catch (error) {
-        alert("An error occurred. Please try again later.");
-        console.error(error);
-      }
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
-</html>
 
+</html>
